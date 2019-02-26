@@ -1,6 +1,7 @@
 package com.ceiba.adaptador.repositorio;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
@@ -20,7 +21,7 @@ public class RepositorioPeliculaEnMemoria implements RepositorioPelicula {
 
 	@Override
 	public List<Pelicula> listar() {
-		return peliculas;
+		return getPeliculas();
 	}
 
 	@Override
@@ -30,6 +31,10 @@ public class RepositorioPeliculaEnMemoria implements RepositorioPelicula {
 
 	@Override
 	public boolean existe(Pelicula pelicula) {
-		return peliculas.stream().anyMatch(fila -> fila.getNombre().equals(pelicula.getNombre()));
+		return getPeliculas().stream().anyMatch(fila -> fila.getNombre().equals(pelicula.getNombre()));
+	}
+	
+	private static List<Pelicula> getPeliculas() {
+		return Collections.unmodifiableList(peliculas);
 	}
 }

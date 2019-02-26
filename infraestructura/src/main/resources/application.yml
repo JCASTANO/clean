@@ -1,13 +1,3 @@
-spring:
-   datasource:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      type: com.zaxxer.hikari.HikariDataSource
-      url: jdbc:mysql://localhost:3306/cinema?autoReconnect=true&useSSL=false
-      username: root
-      password: root
-      hikari:
-         poolName: pool
-
 server:
    port: 8084
    servlet:

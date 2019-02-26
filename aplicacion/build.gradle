@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+group = 'com.ceiba'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	
+	compile 'org.springframework:spring-tx:5.1.4.RELEASE'
+	compile 'org.springframework:spring-context:5.1.4.RELEASE'
+	compileOnly 'org.projectlombok:lombok:1.16.18'
+	annotationProcessor 'org.projectlombok:lombok:1.16.18'
+	
+	implementation project(':dominio')
+}

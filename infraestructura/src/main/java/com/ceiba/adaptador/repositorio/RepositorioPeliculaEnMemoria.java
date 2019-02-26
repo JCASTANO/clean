@@ -16,7 +16,6 @@ public class RepositorioPeliculaEnMemoria implements RepositorioPelicula {
 	static {
 		peliculas = new ArrayList<>();
 		peliculas.add(new Pelicula("batman"));
-		peliculas.add(new Pelicula("spiderman"));
 	}
 
 	@Override

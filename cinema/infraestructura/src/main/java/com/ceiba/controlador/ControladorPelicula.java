@@ -1,6 +1,6 @@
 package com.ceiba.controlador;
 
-import java.util.List;
+import java.util.Collection;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -31,7 +31,7 @@ public class ControladorPelicula {
 
 	@RequestMapping(method=RequestMethod.GET)
 	@ApiOperation("listar")
-	public List<Pelicula> listar() {
+	public Collection<Pelicula> listar() {
 		return this.manejadorListarPeliculas.ejecutar();
 	}
 	

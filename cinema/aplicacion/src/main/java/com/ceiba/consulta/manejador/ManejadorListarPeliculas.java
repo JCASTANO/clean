@@ -1,6 +1,6 @@
 package com.ceiba.consulta.manejador;
 
-import java.util.List;
+import java.util.Collection;
 
 import org.springframework.stereotype.Component;
 
@@ -16,7 +16,7 @@ public class ManejadorListarPeliculas {
 		this.repositorioPelicula = daoPelicula;
 	}
 	
-	public List<Pelicula> ejecutar() {
+	public Collection<Pelicula> ejecutar() {
 		return this.repositorioPelicula.listar();
 	}
 }

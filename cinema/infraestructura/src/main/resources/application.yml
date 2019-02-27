@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo
+server:
+   port: 0
+   servlet:
+      context-path: /cinema
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+

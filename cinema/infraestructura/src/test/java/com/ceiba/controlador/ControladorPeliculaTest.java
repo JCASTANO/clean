@@ -37,7 +37,7 @@ public class ControladorPeliculaTest {
         ComandoPelicula comandoPelicula = new ComandoPeliculaTestDataBuilder().build();
 
         // act - assert
-        mocMvc.perform(post("/peliculas")
+        mocMvc.perform(post("/privada/peliculas")
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .content(objectMapper.writeValueAsString(comandoPelicula)))
         		.andExpect(status().isOk());
@@ -48,7 +48,7 @@ public class ControladorPeliculaTest {
         // arrange
 
         // act - assert
-    	mocMvc.perform(get("/peliculas")
+    	mocMvc.perform(get("/privada/peliculas")
     		      .contentType(MediaType.APPLICATION_JSON))
     		      .andExpect(status().isOk())
     		      .andExpect(jsonPath("$", hasSize(1)))

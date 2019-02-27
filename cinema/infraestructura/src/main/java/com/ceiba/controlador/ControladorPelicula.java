@@ -17,7 +17,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("/peliculas")
+@RequestMapping("/privada/peliculas")
 @Api(tags = { "Controlador pelicula"})
 public class ControladorPelicula {
 	

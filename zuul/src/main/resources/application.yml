@@ -1,0 +1,21 @@
+server:
+   port: 8762
+spring:
+   application:
+      name: zuul-server
+eureka:
+   instance:
+      preferIpAddress: true
+   client:
+      enabled: true
+      registerWithEureka: true
+      fetchRegistry: true
+      serviceUrl:
+         defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+security:
+  oauth2:
+    client:
+      client-id: cliente
+      client-secret: password
+      scope: read,write
+      auto-approve-scopes: '.*'

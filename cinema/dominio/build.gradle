@@ -11,6 +11,9 @@ repositories {
 
 dependencies {
 
+	compileOnly 'org.projectlombok:lombok:1.16.18'
+	annotationProcessor 'org.projectlombok:lombok:1.16.18'
+
 	testImplementation 'junit:junit:4.12'
   	testImplementation 'org.mockito:mockito-all:1.10.19'
 }

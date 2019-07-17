@@ -7,7 +7,7 @@ server:
       context-path: /cinema
 eureka:
   client:
-    enabled: true
+    enabled: false
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:

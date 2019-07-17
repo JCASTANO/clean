@@ -4,19 +4,19 @@ import java.util.Collection;
 
 import org.springframework.stereotype.Component;
 
-import com.ceiba.modelo.Pelicula;
-import com.ceiba.puerto.repositorio.RepositorioPelicula;
+import com.ceiba.modelo.dto.DtoPelicula;
+import com.ceiba.puerto.dao.DaoPelicula;
 
 @Component
 public class ManejadorListarPeliculas {
 
-	private final RepositorioPelicula repositorioPelicula;
+	private final DaoPelicula daoPelicula;
 	
-	public ManejadorListarPeliculas(RepositorioPelicula daoPelicula) {
-		this.repositorioPelicula = daoPelicula;
+	public ManejadorListarPeliculas(DaoPelicula daoPelicula) {
+		this.daoPelicula = daoPelicula;
 	}
 	
-	public Collection<Pelicula> ejecutar() {
-		return this.repositorioPelicula.listar();
+	public Collection<DtoPelicula> ejecutar() {
+		return this.daoPelicula.listar();
 	}
 }

@@ -5,7 +5,7 @@ import org.mockito.Mockito;
 
 import com.ceiba.BasePrueba;
 import com.ceiba.excepcion.ExcepcionDuplicidad;
-import com.ceiba.modelo.Pelicula;
+import com.ceiba.modelo.entidad.Pelicula;
 import com.ceiba.puerto.repositorio.RepositorioPelicula;
 import com.ceiba.testdatabuilder.PeliculaTestDataBuilder;
 

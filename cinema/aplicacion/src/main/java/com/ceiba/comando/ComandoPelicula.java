@@ -10,4 +10,7 @@ import lombok.NoArgsConstructor;
 public class ComandoPelicula {
 
 	private String nombre;
+	private String genero;
+	private Long anioEstreno;
 }
+

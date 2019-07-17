@@ -1,16 +1,8 @@
 package com.ceiba.puerto.repositorio;
 
-import java.util.Collection;
-
-import com.ceiba.modelo.Pelicula;
+import com.ceiba.modelo.entidad.Pelicula;
 
 public interface RepositorioPelicula {
-
-	/**
-	 * Permite listar las peliculas
-	 * @return
-	 */
-	Collection<Pelicula> listar();
 	
 	/**
 	 * Permite crear las peliculas

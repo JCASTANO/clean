@@ -1,4 +1,4 @@
-package com.ceiba.modelo;
+package com.ceiba.modelo.entidad;
 
 import com.ceiba.excepcion.ExcepcionLongitudValor;
 import com.ceiba.excepcion.ExcepcionValorObligatorio;
